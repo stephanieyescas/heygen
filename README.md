@@ -19,5 +19,3 @@ The `integration.cpp` file runs the server, proxy, and client together in a mult
 2. Execute the integration test.
    ```zsh
    ./test <server_port> <proxy_port>
-
-
