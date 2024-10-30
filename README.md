@@ -33,7 +33,7 @@ The client is instantiated with the local address and proxyPort: `Client client(
    Created new job with ID: <jobID> (duration: <duration>)
    ```
 
-5. Job status is returned.
+5. Job status is returned. Sample output found below.
    ```zsh
    Status: {"result": "pending"}
    Status: {"result": "pending"}
