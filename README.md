@@ -19,3 +19,23 @@ The `integration.cpp` file runs the server, proxy, and client together in a mult
 2. Execute the integration test.
    ```zsh
    ./test <server_port> <proxy_port>
+
+The client is instantiated with the local address and proxyPort: `Client client("127.0.0.1", proxyPort);`
+
+3.  Check a job's status.      
+      ```zsh
+      Enter job ID to check status (or Ctrl+C to exit):
+      ```
+
+4. Job creation: when a valid job ID is entered, the server will create a new job with a specified duration.
+   ```zsh
+   Received request for job ID: <jobID>
+   Created new job with ID: <jobID> (duration: <duration>)
+   ```
+
+5. Job status is returned.
+   ```zsh
+   Status: {"result": "pending"}
+   Status: {"result": "pending"}
+   Status: {"result": "completed"}
+   ```
